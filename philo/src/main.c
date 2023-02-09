@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: huaydin <huaydin@student.42vienna.com>     +#+  +:+       +#+        */
+/*   By: huaydin <huaydin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 12:59:05 by huaydin           #+#    #+#             */
-/*   Updated: 2023/02/07 20:25:33 by huaydin          ###   ########.fr       */
+/*   Updated: 2023/02/09 17:26:25 by huaydin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static void	check_if_all_ate_x_times(t_data data)
 		return ;
 	while (i < data.nbr_philos)
 	{
-		if (data.philo[i].done == 0 || data.philo[i].meals != data.meals_to_eat)
+		if (data.philo[i].meals != data.meals_to_eat)
 			return ;
 		i++;
 	}
